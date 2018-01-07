@@ -4,13 +4,11 @@
   "private": true,
   "proxy": {
     "/auth/google": {
-      "target": "http://localhost:5002"
+      "target": "http://localhost:5003"
     },
-    "/api/stripe": {
-      "target": "http://localhost:5002"
-    },
+
     "/api/*": {
-      "target": "http://localhost:5002"
+      "target": "http://localhost:5003"
     }
   },
   "dependencies": {
